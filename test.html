@@ -1,0 +1,7 @@
+const admin_profile = await Adminauth.findByIdAndUpdate(data._id, {
+    image: req.file.filename,
+    firstname: req.body.firstname,
+    lastname: req.body.lastname,
+    email: req.body.email,
+    mobile_number: req.body.mobile_number,
+  });
